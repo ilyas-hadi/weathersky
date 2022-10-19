@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap');
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Main_center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.data_info {
+    margin-top: 4rem;
+    padding: 1rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(231 225 225 / 53%);
+}
+.box {
+    height: 500px;
+    width: 400px;
+    background: orange;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0 auto;
+    /* background-image: url(../images/weather.gif); */
+    /* background-image: url(../images/paper.gif); */
+    background-image: url(../images/flyair.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input.inputField {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+    font-family: 'Josefin Sans';
+}
+.input_Data {
+    padding: 2rem;
+}
+h1.temp-deg {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+h4.tempmin_max {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+h2.Location {
+    text-transform: capitalize;
+    word-break: break-all;
+}
+.input-search {
+    position: relative;
+}
+i.fa-solid.fa-magnifying-glass-location {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+input.inputField::placeholder {
+    font-family: 'Josefin Sans';
+    color: #cfcfcf;
+}
+i.fa-solid.fa-street-view {
+    animation: slash 3s infinite;
+}
+@keyframes slash {
+    0% {transform: translateX(0); color:#fff; }
+    50% {transform: translateX(10px); color: #000;}
+    100% {transform: translateX(0);color: aliceblue;}
+    
+  }
